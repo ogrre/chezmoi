@@ -52,12 +52,12 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 6
-inner.vertical =   6
-outer.left =       6
-outer.bottom =     6
-outer.top =        6 
-outer.right =      6
+inner.horizontal = 5
+inner.vertical =   5
+outer.left =       20
+outer.bottom =     10
+outer.top =        [{ monitor."Built-in Retina Display" = 10 }, 35]
+outer.right =      20
 
 [workspace-to-monitor-force-assignment]
 Q = 'Built-in Retina Display'
