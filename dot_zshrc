@@ -19,7 +19,12 @@ export ZSH="/Users/ogrre/.oh-my-zsh"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-ZSH_THEME="fino"
+# Désactive le thème oh-my-zsh
+# ZSH_THEME="fino"
+ZSH_THEME=""
+
+# Initialise Starship
+eval "$(starship init zsh)"
 
 plugins=(
 	git 
@@ -56,3 +61,13 @@ if [ -z "$SSH_AUTH_SOCK" ] ; then
   eval "$(ssh-agent -s)"
   ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 fi
+
+
+export PATH="${HOME}/.local/bin":${PATH}
+export PATH="/opt/homebrew/opt/php@8.3/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.3/sbin:$PATH"
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+
+
+
